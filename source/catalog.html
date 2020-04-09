@@ -36,9 +36,9 @@
     </header>
 
     <main class="page-main">
-      <h1 class="catalog-title">Каталог продукции</h1>
+      <h1 class="page-main__title">Каталог продукции</h1>
       <section class="main-products">
-        <h2 clas="visually-hidden">Основные товары</h2>
+        <h2 clas="main-products__title visually-hidden">Основные товары</h2>
         <ul class="main-products__list">
           <li class="main-products__item">
            <div class="main-products__image">
@@ -47,7 +47,7 @@
               alt="Банка питания Кэт энерджи Pro со вкусом курицы объемом 500 г">
              </a>
            </div>
-           <div>
+           <div class="main-products__info">
             <a href="chicken-small.html">
               <h3 class="main-products__item-title">cat energy pro 500 г</h3>
             </a>
@@ -66,6 +66,9 @@
               </tr>
              </table>
            </div>
+           <div class="main-products__booking">
+             <a class="main-products__link" href="booking.html">заказать</a>
+           </div>
           </li>
           <li class="main-products__item">
             <div class="main-products__image">
@@ -74,7 +77,7 @@
                   alt="Банка питания Кэт энерджи Pro со вкусом курицы объемом 1000 г">
               </a>
             </div>
-            <div>
+            <div class="main-products__info">
               <a href="chicken-big.html">
                 <h3 class="main-products__item-title">cat energy pro 1000 г</h3>
               </a>
@@ -93,6 +96,9 @@
                </tr>
               </table>
             </div>
+            <div class="main-products__booking">
+              <a class="main-products__link" href="booking.html">заказать</a>
+            </div>
            </li>
            <li class="main-products__item">
             <div class="main-products__image">
@@ -101,7 +107,7 @@
                 alt="Банка питания Кэт энерджи со вкусом рыбы объемом 500 г">
               </a>
             </div>
-            <div>
+            <div class="main-products__info">
               <a href="fish-small.html">
                 <h3 class="main-products__item-title">cat energy pro 500 г</h3>
               </a>
@@ -120,6 +126,9 @@
                </tr>
               </table>
             </div>
+            <div class="main-products__booking">
+              <a class="main-products__link" href="booking.html">заказать</a>
+            </div>
            </li>
            <li class="main-products__item">
             <div class="main-products__image">
@@ -128,7 +137,7 @@
                 alt="Банка питания Кэт энерджи со вкусом рыбы объемом 1000 г">
               </a>
             </div>
-            <div>
+            <div class="main-products__info">
               <a href="fish-big.html">
                 <h3 class="main-products__item-title">cat energy pro 1000 г</h3>
               </a>
@@ -147,6 +156,9 @@
                </tr>
               </table>
             </div>
+            <div class="main-products__booking">
+              <a class="main-products__link" href="booking.html">заказать</a>
+            </div>
            </li>
            <li class="main-products__item">
             <div class="main-products__image">
@@ -155,7 +167,7 @@
                 alt="Банка питания Кэт энерджи со вкусом гречки объемом 500 г">
               </a>
             </div>
-            <div>
+            <div class="main-products__info">
               <a href="buckwheat-small.html">
                 <h3 class="main-products__item-title">cat energy slim 500 г</h3>
               </a>
@@ -174,17 +186,20 @@
                </tr>
               </table>
             </div>
+            <div class="main-products__booking">
+              <a class="main-products__link" href="booking.html">заказать</a>
+            </div>
            </li>
            <li class="main-products__item">
             <div class="main-products__image">
-              <a href="buckwheat.html">
+              <a href="buckwheat-big.html">
                 <img class="main-products__buckwheat-big" src="img/buckwheat-big-mobile@1x.png" width="140" height="144"
                 alt="Банка питания Кэт энерджи со вкусом гречки объемом 1000 г">
               </a>
             </div>
-            <div>
-              <a href="buckwheat.html">
-                <h3 class="main-products__item-title">cat energy slim 500 г</h3>
+            <div class="main-products__info">
+              <a href="buckwheat-big.html">
+                <h3 class="main-products__item-title">cat energy slim 1000 г</h3>
               </a>
               <table class="main-products__data">
                 <tr>
@@ -201,6 +216,9 @@
                </tr>
               </table>
             </div>
+            <div class="main-products__booking">
+              <a class="main-products__link" href="booking.html">заказать</a>
+            </div>
            </li>
            <li class="main-products__item">
             <div class="main-products__image">
@@ -209,7 +227,7 @@
                 alt="Банка питания Кэт энерджи со вкусом риса объемом 500 г">
               </a>
             </div>
-            <div>
+            <div class="main-products__info">
               <a href="rice-small.html">
                 <h3 class="main-products__item-title">cat energy slim 500 г</h3>
               </a>
@@ -228,8 +246,105 @@
                </tr>
               </table>
             </div>
+            <div class="main-products__booking">
+              <a class="main-products__link" href="booking.html">заказать</a>
+            </div>
            </li>
+          <li class="main-products__item">
+            <div class="main-products__info main-products__info--promo">
+              <a class="main-products__link main-products__link--promo" href="booking.html">
+                <b>показать еще 100500 товаров</b>
+              </a>
+              <p class="main-products__text">На самом деле вкусов гораздо больше!</p>
+            </div>
+            <div class="main-products__booking main-products__booking--more">
+              <a class="main-products__link main-products__link--more" href="booking.html">показать все</a>
+            </div>
+          </li>
         </ul>
+      </section>
+      <section class="additional-products">
+        <h2 class="additional-products__title">Дополнительные товары</h2>
+        <ul class="additional-products__list">
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+              <a href="sweetener.html">
+                <h3 class="additional-products__item-title">сахарозаменитель</h3>
+              </a>
+              <table class="additional-products__data">
+                <tr>
+                  <td>1 упаковка (100 г)</td>
+                  <td>200 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="additional-products__booking">
+              <a class="additional-products__link" href="booking.html">заказать</a>
+            </div>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+              <a href="potable-water.html">
+                <h3 class="additional-products__item-title">питьевая вода</h3>
+              </a>
+              <table class="additional-products__data">
+                <tr>
+                  <td>5 литров</td>
+                  <td>50 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="additional-products__booking">
+              <a class="additional-products__link" href="booking.html">заказать</a>
+            </div>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+              <a href="milk.html">
+                <h3 class="additional-products__item-title">молоко</h3>
+              </a>
+              <table class="additional-products__data">
+                <tr>
+                  <td>1 литр</td>
+                  <td>100 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="additional-products__booking">
+              <a class="additional-products__link" href="booking.html">заказать</a>
+            </div>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+              <a href="vitamins.html">
+                <h3 class="additional-products__item-title">витамины</h3>
+              </a>
+              <table class="additional-products__data">
+                <tr>
+                  <td>1 упаковка (30 г)</td>
+                  <td>300 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="additional-products__booking">
+              <a class="additional-products__link" href="booking.html">заказать</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="promotion">
+        <p>Закажите все и получите чехол для кота в подарок!</p>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
+            <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+          <div class="contacts__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
+            <div class="contacts__pin-wrapper" aria-label="Указатель положения на карте"></div>
+          </div>
+        </div>
       </section>
 
     </main>
