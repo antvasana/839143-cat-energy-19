@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+  width: 320px;
+
+  .main-font();
+  font-family: @fancy-font, "Arial", sans-serif;
+  /*text-transform: @main-text-transform;*/
+  border: 1px solid #cccccc;
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  .set-color(@main-color);
+
+  font-family: inherit;
+  text-transform: inherit;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    cursor: pointer;
+  }
+}
