@@ -28,10 +28,21 @@ img {
 }
 
 .button {
+  display: block;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  width: auto;
+
   .set-color(@main-color);
 
+  font-size: @medium-font-size;
+  line-height: @big-line-height;
   font-family: inherit;
   text-transform: inherit;
+  color: #ffffff;
   border: none;
 
   @media (min-width: @tablet-width) {
