@@ -1,5 +1,6 @@
 .page-footer {
   padding-top: 39px;
+  padding-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -27,6 +28,19 @@
 
   .list-reset();
 }
+.social__link path {
+  fill: #666666;
+}
+
+.social__link:hover path {
+  fill: @main-color;
+}
+
+.social__link:focus path,
+.social__link:active path {
+  fill: @main-color;
+  opacity: 0.3;
+}
 
 /*.social__link--instagram {
   display: block;
@@ -50,4 +64,18 @@
 .copyright__link {
   display: block;
   margin-top: 7px;
+}
+
+.copyright__link path {
+  fill: #666666;
+}
+
+.copyright:hover path {
+  fill: @main-color;
+}
+
+.copyright:focus path,
+.copyright:active path {
+  fill: @main-color;
+  opacity: 0.3;
 }
