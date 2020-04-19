@@ -36,16 +36,37 @@ img {
   padding-bottom: 12px;
   width: 100%;
 
-  .set-color(@main-color);
-
   font-size: @medium-font-size;
   line-height: @big-line-height;
   font-family: inherit;
   text-transform: inherit;
-  color: #ffffff;
   border: none;
+}
 
-  @media (min-width: @tablet-width) {
-    cursor: pointer;
-  }
+.green-button {
+  color: #ffffff;
+  .set-color(@main-color);
+}
+
+.green-button:hover {
+  background-color: #5eaa2f;
+}
+
+.green-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
+
+.gray-button {
+  color: @color-text;
+  background-color: @background-color;
+}
+
+.gray-button:hover {
+  background-color: #ebebeb;
+}
+
+.gray-button:active {
+  color: rgba(68, 68, 68, 0.3);
+  background-color: #ebebeb;
 }
