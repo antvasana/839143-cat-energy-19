@@ -5,6 +5,10 @@
     .st0 {
       fill: #3F4242;
     }
+	
+	.st0:active {
+      fill: rgba(17, 17, 17, 0.3);
+    }
   </style>
   <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 "/>
 </svg>
