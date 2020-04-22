@@ -1,163 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи, главная страница</title>
-    <meta name="viewport" content="width
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи, главная страница</title>
+  <meta name="viewport" content="width
     =device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
 
-  <body class="container">
-    <br><br>
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
-          alt="Логотип сайта Кэт энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a>главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main class="page-main">
-      <section class="intro">
-        <div class="intro__presentation">
-          <h1 class="intro__title">Функциональное питание для котов</h1>
-          <p class="intro__text">занялся собой? займись котом!</p>
-        </div>
-        <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270"
-          alt="Рекламный образец продукции компании Кэт энерджи">
-        <a href="form.html" class="button green-button intro__button">Подобрать программу</a>
-      </section>
-      <section class="program-type">
-        <h2 class="program-type__title visually-hidden">Корм для котов компании Кэт энерджи</h2>
-        <ul class="program-type__list program-type-list">
-          <li class="program-type-list__item">
-            <h3 class="program-type-list__slim">похудение</h3>
-            <p class="program-type-list__slim-text">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям?
-              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program-type-list__link" href="catalog.html#slim">каталог slim</a>
+<body class="container">
+  <br><br>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+        alt="Логотип сайта Кэт энерджи">
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a>главная</a>
           </li>
-          <li class="program-type-list__item">
-            <h3 class="program-type-list__pro">набор массы</h3>
-            <p class="program-type-list__pro-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-              Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program-type-list__link" href="catalog.html#pro">каталог pro</a>
+          <li class="site-list__item">
+            <a href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">подбор программы</a>
           </li>
         </ul>
-      </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__title">Как это работает</h2>
-          <ul class="advantages__list advantages-list">
-            <li class="advantages-list__item advantages-list__item--nutrients">
-              <p class="advantages-list__description advantages-list__description--nutrients">Функциональное питание содержит только полезные питательные вещества.</p>
-            </li>
-            <li class="advantages-list__item advantages-list__item--fast">
-              <p class="advantages-list__description advantages-list__description--fast">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            </li>
-            <li class="advantages-list__item advantages-list__item--modification">
-              <p class="advantages-list__description advantages-list__description--modification">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            </li>
-            <li class="advantages-list__item advantages-list__item--improvement">
-              <p class="advantages-list__description advantages-list__description--improvement">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="intro">
+      <div class="intro__presentation">
+        <h1 class="intro__title">Функциональное питание для котов</h1>
+        <p class="intro__text">занялся собой? займись котом!</p>
+      </div>
+      <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270"
+        alt="Рекламный образец продукции компании Кэт энерджи">
+      <a href="form.html" class="button green-button intro__button">Подобрать программу</a>
+    </section>
+    <section class="program-type">
+      <h2 class="program-type__title visually-hidden">Корм для котов компании Кэт энерджи</h2>
+      <ul class="program-type__list program-type-list">
+        <li class="program-type-list__item">
+          <h3 class="program-type-list__slim">похудение</h3>
+          <p class="program-type-list__slim-text">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям?
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program-type-list__link" href="catalog.html#slim">каталог slim</a>
+        </li>
+        <li class="program-type-list__item">
+          <h3 class="program-type-list__pro">набор массы</h3>
+          <p class="program-type-list__pro-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+            Energy
+            Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program-type-list__link" href="catalog.html#pro">каталог pro</a>
+        </li>
+      </ul>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list advantages-list">
+          <li class="advantages-list__item advantages-list__item--nutrients">
+            <p class="advantages-list__description advantages-list__description--nutrients">Функциональное питание
+              содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="advantages-list__item advantages-list__item--fast">
+            <p class="advantages-list__description advantages-list__description--fast">Выпускается в виде порошка,
+              который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="advantages-list__item advantages-list__item--modification">
+            <p class="advantages-list__description advantages-list__description--modification">Замените один-два приема
+              обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="advantages-list__item advantages-list__item--improvement">
+            <p class="advantages-list__description advantages-list__description--improvement">Уже через месяц
+              наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <article class="demonstration">
+      <div class="wrapper demonstration__wrapper">
+        <h2 class="demonstration__title">Живой пример</h2>
+        <p class="demonstration__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит 16 часов
+          в
+          день.</p>
+        <ul class="demonstration__data data-list">
+          <li class="data-list__item">
+            <div class="data-list__number-wrapper">
+              <b class="data-list__number">5 кг</b>
+            </div>
+            <p class="data-list__text data-list__text--slim">снижение веса</p>
+          </li>
+          <li class="data-list__item">
+            <div class="data-list__number-wrapper">
+              <b class="data-list__number">60 дней</b>
+            </div>
+            <p class="data-list__text data-list__text--waste-time">затрачено времени</p>
+          </li>
+        </ul>
+        <p class="demonstration__conclusion">затраты на питание: 15 000 руб.</p>
+        <ul class="demonstration__list slider__list">
+          <li class="demonstration__item demonstration__item--before slider__item">
+            <img class="demonstration__image" src="img/before-mobile@1x.png" width="311" height="232"
+              alt="фото кота до приема Кэт Энерджи">
+          </li>
+          <li class="demonstration__item demonstration__item--after slider__item">
+            <img class="demonstration__image" src="img/after-mobile@1x.png" width="311" height="232"
+              alt="фото кота после приема Кэт Энерджи">
+          </li>
+        </ul>
+        <p class="demonstration__toggles slider__toggles">
+          <button class="slider__toggle" type="button"
+            aria-label="Переход к фотографии кота до приема Кэт Энерджи">Было</button>
+          <button class="slider__toggle" type="button"
+            aria-label="Переход к фотографии кота после приема Кэт Энерджи">Стало</button>
+        </p>
+      </div>
+    </article>
+    <section class="contact-us">
+      <div class="contact-us__wrapper">
+        <div class="contact-us__text">
+          <p class="contact-us__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <address class="contact-us__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-      </section>
-      <article class="demonstration">
-        <div class="wrapper demonstration__wrapper">
-          <h2 class="demonstration__title">Живой пример</h2>
-          <p class="demonstration__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит 16 часов в
-            день.</p>
-          <ul class="demonstration__data data-list">
-            <li class="data-list__item">
-              <div class="data-list__number-wrapper">
-                <b class="data-list__number">5 кг</b>
-              </div>
-              <p class="data-list__text data-list__text--slim">снижение веса</p>
-            </li>
-            <li class="data-list__item">
-              <div class="data-list__number-wrapper">
-                <b class="data-list__number">60 дней</b>
-              </div>
-              <p class="data-list__text data-list__text--waste-time">затрачено времени</p>
-            </li>
-          </ul>
-          <p class="demonstration__conclusion">затраты на питание: 15 000 руб.</p>
-          <ul class="demonstration__list slider__list">
-            <li class="demonstration__item demonstration__item--before slider__item">
-              <img class="demonstration__image" src="img/before-mobile@1x.png" width="311" height="232"
-                alt="фото кота до приема Кэт Энерджи">
-            </li>
-            <li class="demonstration__item demonstration__item--after slider__item">
-              <img class="demonstration__image" src="img/after-mobile@1x.png" width="311" height="232"
-                alt="фото кота после приема Кэт Энерджи">
-            </li>
-          </ul>
-          <p class="demonstration__toggles slider__toggles">
-            <button class="slider__toggle" type="button" aria-label="Переход к фотографии кота до приема Кэт Энерджи">Было</button>
-            <button class="slider__toggle" type="button" aria-label="Переход к фотографии кота после приема Кэт Энерджи">Стало</button>
+        <div class="contact-us__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
+          <div style="position:relative;overflow:hidden;"><a
+              href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+              style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+              href="https://yandex.ru/maps/2/saint-petersburg/?clid=2254922&ll=30.322740%2C59.938534&utm_medium=mapframe&utm_source=maps&z=19"
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт‑Петербург — Яндекс.Карты</a><iframe
+              src="https://yandex.ru/map-widget/v1/-/CSVTJXm-" width="560" height="400" frameborder="1"
+              allowfullscreen="true" style="position:relative;"></iframe></div>
+          <p>
+            <img class="contact-us__map" src="img/bg-map-mobile@1x.png" alt="aдрес на карте компании Cat Energy">
           </p>
+          <!--<div class="contact-us__pin-wrapper" aria-label="Указатель положения на карте"></div>-->
         </div>
-      </article>
-      <section class="contact-us">
-        <div class="contact-us__wrapper">
-          <div class="contact-us__text">
-            <p class="contact-us__slogan">приглашаем к сотрудничеству дилеров!</p>
-            <address class="contact-us__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          </div>
-          <div class="contact-us__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?clid=2254922&ll=30.322740%2C59.938534&utm_medium=mapframe&utm_source=maps&z=19" style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт‑Петербург — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CSVTJXm-" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-            <p>
-              <img class="contact-us__map" src="img/bg-map-mobile@1x.png" alt="aдрес на карте компании Cat Energy">
-            </p>
-            <!--<div class="contact-us__pin-wrapper" aria-label="Указатель положения на карте"></div>-->
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2"
-            target="_blank">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
-              alt="Упрощённый логотип сайта Кэт энерджи">
-          </a>
-        </div>
-        <div class="page-footer__social social">
-          <h2 class="visually-hidden social__title">Кэт энерджи в соцсетях</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"><span class="visually-hidden">Кэт
-                  энерджи в Вконтакте</span>
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
-                  <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="HTML и CSS, уровень 2" target="_blank">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
+            alt="Упрощённый логотип сайта Кэт энерджи">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden social__title">Кэт энерджи в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"><span
+                class="visually-hidden">Кэт
+                энерджи в Вконтакте</span>
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12"
+                style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
             	c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
             	s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
             	C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4c0-0.5,0.5-0.9,0.9-1.1C8.3,0.1,9.1,0,10.1,0h0.5c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5v1.6
@@ -170,60 +188,63 @@
             	c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
             	C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
             	c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" />
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank"><span
-                  class="visually-hidden">Кэт энерджи в Инстаграме</span>
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="17" height="17" viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: #231F20;
-                    }
-                  </style>
-                  <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-            	 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" />
-                  <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-            	s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" />
-                  <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"><span
-                  class="visually-hidden">Кэт энерджи в Фейсбуке</span>
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="10" height="19" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
-                  <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
-            	h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
-            	z" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2"
-            target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
-              <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399
-                        12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02
-                        3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014
-                        1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48
-                        8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025
-                        8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
-            </svg>
-          </a>
-        </div>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
+              target="_blank"><span class="visually-hidden">Кэт энерджи в Инстаграме</span>
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="17" viewBox="0 0 16.1 16"
+                style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #231F20;
+                  }
+                </style>
+                <path class="st0"
+                  d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+                              	 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" />
+                <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
+                              	s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" />
+                <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+              target="_blank"><span class="visually-hidden">Кэт энерджи в Фейсбуке</span>
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19" viewBox="0 0 10 19"
+                style="enable-background:new 0 0 10 19;" xml:space="preserve">
+                <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
+                              	h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
+                              	z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2"
+          target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+            <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399
+                12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02
+                3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014
+                1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48
+                8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025
+                8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 
-  </body>
 </html>
