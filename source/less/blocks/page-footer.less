@@ -1,0 +1,82 @@
+.page-footer {
+  padding-top: 39px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: @background-color;
+}
+
+.page-footer__logo {
+  margin-bottom: 31px;
+}
+
+.social {
+  margin-bottom: 20px;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .list-reset();
+}
+
+.social__link path {
+  fill: #666666;
+}
+
+.social__link:hover path {
+  fill: @main-color;
+}
+
+.social__link:focus path,
+.social__link:active path {
+  fill: @main-color;
+  opacity: 0.3;
+}
+
+/*.social__link--instagram {
+  display: block;
+  margin-top: 2px;
+}*/
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  font-family: "Arial", sans-serif;
+  font-size: @medium-font-size;
+  line-height: @medium-line-height;
+  text-transform: none;
+  text-align: left;
+  color: @color-text;
+}
+
+.copyright__link {
+  display: block;
+  margin-top: 7px;
+}
+
+.copyright__link path {
+  fill: #666666;
+}
+
+.copyright:hover path {
+  fill: @main-color;
+}
+
+.copyright:focus path,
+.copyright:active path {
+  fill: @main-color;
+  opacity: 0.3;
+}

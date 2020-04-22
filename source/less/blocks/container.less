@@ -1,0 +1,80 @@
+.container {
+  margin: 0 auto;
+  width: 320px;
+
+  .main-font();
+  font-family: @fancy-font-one, "Arial", sans-serif;
+  text-transform: @main-text-transform;
+  text-align: @main-text-align;
+  border: 1px solid #e6e6e6;
+
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+  text-transform: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: block;
+
+  margin: 0 auto;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  width: 100%;
+
+  font-size: @medium-font-size;
+  line-height: @big-line-height;
+  font-family: inherit;
+  text-transform: inherit;
+  border: none;
+}
+
+.green-button {
+  color: #ffffff;
+  .set-color(@main-color);
+}
+
+.green-button:hover {
+  background-color: #5eaa2f;
+}
+
+.green-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
+
+.gray-button {
+  color: @color-text;
+  background-color: @background-color;
+}
+
+.gray-button:hover {
+  background-color: #ebebeb;
+}
+
+.gray-button:active {
+  color: rgba(68, 68, 68, 0.3);
+  background-color: #ebebeb;
+}

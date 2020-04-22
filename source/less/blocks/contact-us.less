@@ -1,0 +1,59 @@
+.contact-us {
+  margin-bottom: 35px;
+
+  min-height: 476px;
+}
+
+.contact-us__text {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+  padding-left: 19px;
+}
+
+.contact-us__slogan {
+  margin-top: 31px;
+  margin-right: 5px;
+
+  font-size: @medium-font-size;
+  line-height: @big-line-height;
+  font-weight: normal;
+  text-align: left;
+  color: @color-title;
+}
+
+.contact-us__address {
+  display: block;
+  margin-top: 33px;
+
+  font-family: "Arial", sans-serif;
+  font-size: @main-font-size;
+  line-height: @big-line-height;
+  font-style: normal;
+  text-align: left;
+  color: @color-text;
+}
+
+.contact-us__wrapper {
+  position: relative;
+}
+
+.contact-us__map {
+  content: "";
+  position: absolute;
+  top: 98%;
+  left: 0;
+}
+
+.contact-us__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 240px;
+  left: 31%;
+
+  width: 124px;
+  height: 106px;
+
+  background-image: url("../img/map-pin.png");
+}

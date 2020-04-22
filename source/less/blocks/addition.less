@@ -1,0 +1,89 @@
+.addition__legend {
+  position: relative;
+
+  margin-bottom: 32px;
+  margin-left: 20px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: none;
+  color: @color-title;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -112%;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 95%;
+    height: 3px;
+
+    background: @main-color;
+  }
+}
+
+.addition-list {
+  .list-reset();
+}
+
+.addition-list__option {
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.addition-list__label {
+  position: relative;
+
+  padding-left: 46px;
+
+  font-size: @medium-font-size;
+  line-height: @main-line-height;
+  color: #222222;
+}
+
+.addition-list__label:active {
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.addition-list__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 1%;
+}
+
+.addition-list__label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.addition-list__label:active::before {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.addition-list__input:checked + .addition-list__label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 22px;
+  height: 17px;
+
+  background-image: url("../img/icon-tick.svg");
+}
+
+.addition-list__input:checked + .addition-list__label:active::after {
+  opacity: 0.3;
+}
