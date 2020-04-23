@@ -1,5 +1,9 @@
 .intro {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 120px;
+  }
 }
 
 .intro__presentation {
@@ -9,6 +13,11 @@
 
   background-color: @main-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    background-image: none;
+  }
 }
 
 .intro__title {
@@ -18,8 +27,17 @@
   font-size: @big-font-size;
   line-height: @biggest-line-height;
   text-transform: none;
-
   color: #ffffff;
+
+   @media (min-width: @tablet-width) {
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    text-align: left;
+    font-family: @fancy-font-one, "Arial", sans-serif;
+    color: @color-title;
+  }
 }
 
 .intro__text {

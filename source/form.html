@@ -13,13 +13,12 @@
 
 
 <body class="container">
-  <br><br>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
         alt="Логотип сайта Кэт энерджи">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -37,121 +36,127 @@
     </nav>
   </header>
 
-    <main class=" page-main">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__call-to-action">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="feedback" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="feedback__cat-data cat-data">
-          <legend class="cat-data__legend visually-hidden">Данные о коте</legend>
-          <div class="cat-data__name">
-            <label class="cat-data__label cat-data__label--name" for="feedback-name">имя*:</label>
-            <input class="cat-data__cat cat-data__cat--name" id="feedback-name" type="text" name="feedback-name"
-              placeholder="барсик" required="">
-          </div>
-          <div class="cat-data__weight">
-            <label class="cat-data__label cat-data__label--weight" for="feedback-weight">вес (кг)*:</label>
-            <input class="cat-data__cat cat-data__cat--weight" id="feedback-weight" type="text" name="feedback-weight"
-              placeholder="7" required="">
-          </div>
-          <div class="cat-data__years">
-            <label class="cat-data__label cat-data__label--years" for="feedback-years">возраст (лет):</label>
-            <input class="cat-data__cat cat-data__cat--years" id="feedback-years" type="text" name="feedback-name"
-              placeholder="7">
-          </div>
-        </fieldset>
-        <fieldset class="feedback__program-selection program-selection">
-          <legend class="program-selection__legend visually-hidden">Какая именно программа необходима коту?
-          </legend>
-          <ul class="program-selection__list selection-list">
-            <li class="selection-list__option" tabindex="0">
-              <input class="selection-list__input visually-hidden" type="radio" name="radio" value="slim" id="slim" checked="">
-              <label class="selection-list__label selection-list__label--slim" for="slim">похудение</label>
-            </li>
-            <li class="selection-list__option" tabindex="0">
-              <input class="selection-list__input visually-hidden" type="radio" name="radio" value="weight-gain"
-                id="weight-gain">
-              <label class="selection-list__label selection-list__label--weight-gain" for="weight-gain">набор
-                массы</label>
-            </li>
-            <li class="selection-list__option" tabindex="0">
-              <input class="selection-list__input visually-hidden" type="radio" name="radio" value="need-advice"
-                id="need-advice">
-              <label class="selection-list__label selection-list__label--need-advice" for="need-advice">не знаю
-                (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback__contacts-request contacts-request">
-          <legend class="contacts-request__legend">Контактные данные<br> (владельца кота)</legend>
-          <div class="contacts-request__wrapper">
-            <div class="contacts-request__email">
-              <label class="contacts-request__label contacts-request__label--email" for="feedback-email">e-mail*:</label>
-              <input class="contacts-request__user contacts-request__user--email" id="feedback-email" type="email"
-                name="feedback-email" placeholder="kuklachev@gmail.com" required="">
-            </div>
-            <div class="contacts-request__phone">
-              <label class="contacts-request__label contacts-request__label--phone" for="feedback-phone">телефон*:
-              </label>
-              <input class="contacts-request__user contacts-request__user--phone" id="feedback-phone" type="tel"
-                name="feedback-phone" placeholder="8 (960) 900-60-90" required="">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="feedback__cat-habits cat-habits">
-          <legend class="cat-habits__legend">Комментарий</legend>
-          <div class="cat-habits__story">
-            <label class="cat-habits__label visually-hidden" for="field">Ваш комментарий</label>
-            <textarea class="cat-habits__textfield" name="field" id="field" type="text" rows="6"
-              placeholder="расскажите обо всех повадках кота"></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="feedback__addition addition">
-          <legend class="addition__legend">Дополнительно</legend>
-          <ul class="addition__list addition-list">
-            <li class="addition-list__option" tabindex="0">
-              <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox" value="sweetener"
-                id="sweetener" checked="">
-              <label class="addition-list__label addition-list__label--sweetener" for="sweetener">сахарозаменитель</label>
-            </li>
-            <li class="addition-list__option" tabindex="0">
-              <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox" value="potable-water"
-                id="potable-water">
-              <label class="addition-list__label addition-list-list__label--potable-water" for="potable-water">питьевая
-                вода</label>
-            </li>
-            <li class="addition-list__option" tabindex="0">
-              <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox" value="milk" id="milk">
-              <label class="addition-list__label addition-list__label--milk" for="milk">молоко</label>
-            </li>
-            <li class="addition-list__option" tabindex="0">
-              <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox" value="vitamins"
-                id="vitamins">
-              <label class="addition-list__label addition-list__label--vitamins" for="red-rocks">витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="feedback__submit">
-          <button class="button green-button feedback__send-button" type="submit">отправить заявку</button>
-          <p class="feedback__note">&ast; &ndash; обязательные поля</p>
-        </div>
-      </form>
+  <main class=" page-main">
+            <h1 class="page-main__title">Подбор программы</h1>
+            <p class="page-main__call-to-action">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <form class="feedback" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="feedback__cat-data cat-data">
+                <legend class="cat-data__legend visually-hidden">Данные о коте</legend>
+                <div class="cat-data__name">
+                  <label class="cat-data__label cat-data__label--name" for="feedback-name">имя*:</label>
+                  <input class="cat-data__cat cat-data__cat--name" id="feedback-name" type="text" name="feedback-name"
+                    placeholder="барсик" required="">
+                </div>
+                <div class="cat-data__weight">
+                  <label class="cat-data__label cat-data__label--weight" for="feedback-weight">вес (кг)*:</label>
+                  <input class="cat-data__cat cat-data__cat--weight" id="feedback-weight" type="text"
+                    name="feedback-weight" placeholder="7" required="">
+                </div>
+                <div class="cat-data__years">
+                  <label class="cat-data__label cat-data__label--years" for="feedback-years">возраст (лет):</label>
+                  <input class="cat-data__cat cat-data__cat--years" id="feedback-years" type="text" name="feedback-name"
+                    placeholder="7">
+                </div>
+              </fieldset>
+              <fieldset class="feedback__program-selection program-selection">
+                <legend class="program-selection__legend visually-hidden">Какая именно программа необходима коту?
+                </legend>
+                <ul class="program-selection__list selection-list">
+                  <li class="selection-list__option" tabindex="0">
+                    <input class="selection-list__input visually-hidden" type="radio" name="radio" value="slim"
+                      id="slim" checked="">
+                    <label class="selection-list__label selection-list__label--slim" for="slim">похудение</label>
+                  </li>
+                  <li class="selection-list__option" tabindex="0">
+                    <input class="selection-list__input visually-hidden" type="radio" name="radio" value="weight-gain"
+                      id="weight-gain">
+                    <label class="selection-list__label selection-list__label--weight-gain" for="weight-gain">набор
+                      массы</label>
+                  </li>
+                  <li class="selection-list__option" tabindex="0">
+                    <input class="selection-list__input visually-hidden" type="radio" name="radio" value="need-advice"
+                      id="need-advice">
+                    <label class="selection-list__label selection-list__label--need-advice" for="need-advice">не знаю
+                      (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="feedback__contacts-request contacts-request">
+                <legend class="contacts-request__legend">Контактные данные<br> (владельца кота)</legend>
+                <div class="contacts-request__wrapper">
+                  <div class="contacts-request__email">
+                    <label class="contacts-request__label contacts-request__label--email"
+                      for="feedback-email">e-mail*:</label>
+                    <input class="contacts-request__user contacts-request__user--email" id="feedback-email" type="email"
+                      name="feedback-email" placeholder="kuklachev@gmail.com" required="">
+                  </div>
+                  <div class="contacts-request__phone">
+                    <label class="contacts-request__label contacts-request__label--phone" for="feedback-phone">телефон*:
+                    </label>
+                    <input class="contacts-request__user contacts-request__user--phone" id="feedback-phone" type="tel"
+                      name="feedback-phone" placeholder="8 (960) 900-60-90" required="">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="feedback__cat-habits cat-habits">
+                <legend class="cat-habits__legend">Комментарий</legend>
+                <div class="cat-habits__story">
+                  <label class="cat-habits__label visually-hidden" for="field">Ваш комментарий</label>
+                  <textarea class="cat-habits__textfield" name="field" id="field" type="text" rows="6"
+                    placeholder="расскажите обо всех повадках кота"></textarea>
+                </div>
+              </fieldset>
+              <fieldset class="feedback__addition addition">
+                <legend class="addition__legend">Дополнительно</legend>
+                <ul class="addition__list addition-list">
+                  <li class="addition-list__option" tabindex="0">
+                    <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox"
+                      value="sweetener" id="sweetener" checked="">
+                    <label class="addition-list__label addition-list__label--sweetener"
+                      for="sweetener">сахарозаменитель</label>
+                  </li>
+                  <li class="addition-list__option" tabindex="0">
+                    <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox"
+                      value="potable-water" id="potable-water">
+                    <label class="addition-list__label addition-list-list__label--potable-water"
+                      for="potable-water">питьевая
+                      вода</label>
+                  </li>
+                  <li class="addition-list__option" tabindex="0">
+                    <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox" value="milk"
+                      id="milk">
+                    <label class="addition-list__label addition-list__label--milk" for="milk">молоко</label>
+                  </li>
+                  <li class="addition-list__option" tabindex="0">
+                    <input class="addition-list__input visually-hidden" type="checkbox" name="checkbox" value="vitamins"
+                      id="vitamins">
+                    <label class="addition-list__label addition-list__label--vitamins" for="red-rocks">витамины</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="feedback__submit">
+                <button class="button green-button feedback__send-button" type="submit">отправить заявку</button>
+                <p class="feedback__note">&ast; &ndash; обязательные поля</p>
+              </div>
+            </form>
 
-      <section class="contact-us">
-        <div class="contact-us__wrapper">
-          <div class="contact-us__text">
-            <p class="contact-us__slogan">приглашаем к сотрудничеству дилеров!</p>
-            <address class="contact-us__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          </div>
-          <div class="contact-us__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
-            <img class="contact-us__map" src="img/bg-map-mobile@1x.png" alt="aдрес на карте компании Cat Energy">
-            <!--<div class="contact-us__pin-wrapper" aria-label="Указатель положения на карте"></div>-->
-          </div>
-        </div>
-      </section>
+            <section class="contact-us">
+              <div class="contact-us__wrapper">
+                <div class="contact-us__text">
+                  <p class="contact-us__slogan">приглашаем к сотрудничеству дилеров!</p>
+                  <address class="contact-us__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+                </div>
+                <div class="contact-us__map-wrapper"
+                  aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
+                  <img class="contact-us__map" src="img/bg-map-mobile@1x.png" alt="aдрес на карте компании Cat Energy">
+                  <!--<div class="contact-us__pin-wrapper" aria-label="Указатель положения на карте"></div>-->
+                </div>
+              </div>
+            </section>
 
-   </main>
+            </main>
 
-    <footer class="page-footer">
+            <footer class="page-footer">
               <div class="page-footer__wrapper">
                 <div class="page-footer__logo">
                   <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive"

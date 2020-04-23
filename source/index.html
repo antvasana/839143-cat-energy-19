@@ -13,12 +13,25 @@
 
 
 <body class="container">
-  <br><br>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
         alt="Логотип сайта Кэт энерджи">
     </a>
+    <!--<a class="page-header__logo" href="#" aria-label="Логотип Кэт энерджи, главная страница">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Кэт энерджи">
+      </picture>
+    </a>
+    <a class="main-nav__logo" href="#" aria-label="Логотип сайта Седона, главная страница">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта Седона">
+      </picture>
+    </a>-->
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -40,12 +53,17 @@
   <main class="page-main">
     <section class="intro">
       <div class="intro__presentation">
-        <h1 class="intro__title">Функциональное питание для котов</h1>
+        <h1 class="intro__title">Функциональное<br> питание для котов</h1>
         <p class="intro__text">занялся собой? займись котом!</p>
       </div>
-      <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+        <img class="intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="">
+      </picture>
+      <!--<img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270"
         alt="Рекламный образец продукции компании Кэт энерджи">
-      <a href="form.html" class="button green-button intro__button">Подобрать программу</a>
+      <a href="form.html" class="button green-button intro__button">Подобрать программу</a>-->
     </section>
     <section class="program-type">
       <h2 class="program-type__title visually-hidden">Корм для котов компании Кэт энерджи</h2>
