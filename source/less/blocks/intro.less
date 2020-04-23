@@ -1,8 +1,10 @@
 .intro {
   position: relative;
+  z-index: 5;
 
   @media (min-width: @tablet-width) {
     margin-left: 120px;
+    min-height: 775px;
   }
 }
 
@@ -26,14 +28,15 @@
 
   font-size: @big-font-size;
   line-height: @biggest-line-height;
+  font-weight: normal;
   text-transform: none;
   color: #ffffff;
 
    @media (min-width: @tablet-width) {
+     margin-bottom: 33px;
 
     font-size: 60px;
     line-height: 60px;
-    font-weight: normal;
     text-align: left;
     font-family: @fancy-font-one, "Arial", sans-serif;
     color: @color-title;
@@ -41,8 +44,20 @@
 }
 
 .intro__text {
+  font-size: @main-font-size;
   line-height: @small-line-height;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    text-align: left;
+    z-index: 5;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-family: @fancy-font-one, "Arial", sans-serif;
+    color: @color-title;
+  }
 }
 
 .intro__image {
@@ -50,8 +65,31 @@
   position: absolute;
   top: 35%;
   left: 7%;
+
+  @media (min-width: @tablet-width) {
+    top: 29%;
+    left: -10%;
+    z-index: 0;
+
+    display: block;
+    margin-bottom: 50px;
+  }
 }
 
 .intro__button {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: auto;
+
   .main-font();
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    bottom: 205px;
+    z-index: 5;
+
+    margin-left: 0;
+    margin-right: 0;
+    width: 245px;
+  }
 }
