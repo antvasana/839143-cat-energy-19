@@ -99,13 +99,12 @@
       </div>
     </section>
     <article class="demonstration">
-      <div class="wrapper demonstration__wrapper">
-        <h2 class="demonstration__title">Живой пример</h2>
-        <p class="demonstration__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит 16 часов
-          в
-          день.</p>
+      <h2 class="demonstration__title">Живой пример</h2>
+      <p class="demonstration__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит 16
+        часов
+        в день.</p>
+      <div class="demonstration__wrapper">
         <ul class="demonstration__data data-list">
           <li class="data-list__item">
             <div class="data-list__number-wrapper">
@@ -121,29 +120,43 @@
           </li>
         </ul>
         <p class="demonstration__conclusion">затраты на питание: 15 000 руб.</p>
+      </div>
+      <div class="demonstation__slider">
         <ul class="demonstration__list slider__list">
           <li class="demonstration__item demonstration__item--before slider__item">
-            <img class="demonstration__image" src="img/before-mobile@1x.png" width="311" height="232"
-              alt="фото кота до приема Кэт Энерджи">
+            <div class="demonstation__slider demonstation__slider--before">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="demonstration__image demonstration__image--before" src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png 2x" alt="фото кота до приема Кэт Энерджи">
+              </picture>
+            </div>
           </li>
           <!--<li class="demonstration__item demonstration__item--after slider__item">
-            <img class="demonstration__image" src="img/after-mobile@1x.png" width="311" height="232"
-              alt="фото кота после приема Кэт Энерджи">
-          </li>-->
-        </ul>
-        <p class="demonstration__toggles slider__toggles">
-          <button class="slider__toggle" type="button"
-            aria-label="Переход к фотографии кота до приема Кэт Энерджи">Было</button>
-          <button class="slider__toggle" type="button"
-            aria-label="Переход к фотографии кота после приема Кэт Энерджи">Стало</button>
-        </p>
+            <div class="demonstation__slider demonstation__slider--after">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="demonstration__image demonstration__image--after" src="img/after-mobile@1x.png"
+                  srcset="img/after-mobile@2x.png 2x" alt="фото кота до приема Кэт Энерджи">
+              </picture>
+            </div>
+          </li>
+        </ul>-->
+          <p class="demonstration__toggles slider__toggles">
+            <button class="slider__toggle" type="button"
+              aria-label="Переход к фотографии кота до приема Кэт Энерджи">Было</button>
+            <button class="slider__toggle" type="button"
+              aria-label="Переход к фотографии кота после приема Кэт Энерджи">Стало</button>
+          </p>
       </div>
     </article>
     <section class="contact-us">
       <div class="contact-us__wrapper">
         <div class="contact-us__text">
           <p class="contact-us__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contact-us__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contact-us__address"><span>ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</address>
         </div>
         <div class="contact-us__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
           <!--<div style="position:relative;overflow:hidden;"><a
@@ -180,13 +193,13 @@
       <div class="page-footer__social social">
         <h2 class="visually-hidden social__title">Кэт энерджи в соцсетях</h2>
         <ul class="social__list">
-          <li class="social__item">
+          <li class="social__item social__item--vkontakte">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"><span
                 class="visually-hidden">Кэт
                 энерджи в Вконтакте</span>
               <?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="social__icon-vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12"
                 style="enable-background:new 0 0 22 12;" xml:space="preserve">
                 <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
@@ -205,12 +218,12 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--instagram">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
               target="_blank"><span class="visually-hidden">Кэт энерджи в Инстаграме</span>
               <?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="social__icon-insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="17" viewBox="0 0 16.1 16"
                 style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
                 <style type="text/css">
@@ -227,12 +240,12 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--facebook">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
               target="_blank"><span class="visually-hidden">Кэт энерджи в Фейсбуке</span>
               <?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="social__icon-fb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19" viewBox="0 0 10 19"
                 style="enable-background:new 0 0 10 19;" xml:space="preserve">
                 <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18

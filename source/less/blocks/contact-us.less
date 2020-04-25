@@ -10,6 +10,10 @@
 
   padding-bottom: 10px;
   padding-left: 19px;
+
+  @media (min-width: @tablet-width) {
+     padding-right: 71px;
+   }
 }
 
 .contact-us__slogan {
@@ -21,6 +25,13 @@
   font-weight: normal;
   text-align: left;
   color: @color-title;
+
+   @media (min-width: @tablet-width) {
+     width: 154px;
+
+     font-size: 20px;
+     line-height: 25px;
+   }
 }
 
 .contact-us__address {
@@ -33,6 +44,21 @@
   font-style: normal;
   text-align: left;
   color: @color-text;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 25px;
+    width: 190px;
+
+    font-size: @medium-line-height;
+    text-align: right;
+  }
+}
+
+.contact-us__address span {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .contact-us__wrapper {
@@ -56,4 +82,9 @@
   height: 106px;
 
   background-image: url("../img/map-pin.png");
+
+  @media (min-width: @tablet-width) {
+    top: 282px;
+    left: 43%;
+  }
 }
