@@ -14,26 +14,14 @@
 
 <body class="container">
   <header class="page-header">
-    <!--<a class="page-header__logo" href="#" aria-label="Логотип сайта Кэт энерджи, главная страница">
-      <img class="page-header__logo-image" src="img/logo-desktop.svg" width="203" height="39"
-        alt="Логотип сайта Кэт энерджи">
-    </a>-->
     <a class="page-header__logo" href="#" aria-label="Логотип сайта Кэт энерджи, главная страница">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Кэт энерджи">
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" width="203" height="60">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="59">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+          alt="Логотип сайта Кэт энерджи">
       </picture>
     </a>
-
-    <!--<a class="main-nav__logo" href="#" aria-label="Логотип сайта Седона, главная страница">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-        <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта Седона">
-      </picture>
-    </a>-->
-
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -59,7 +47,7 @@
         <p class="intro__text">занялся собой? займись котом!</p>
       </div>
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
         <img class="intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
           alt="Рекламный образец продукции компании Кэт энерджи">
@@ -105,7 +93,7 @@
           </li>
           <li class="advantages-list__item advantages-list__item--improvement">
             <p class="advantages-list__description advantages-list__description--improvement">Уже через месяц
-              наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              наслаждайтесь <span>изменениями к лучшему вашего питомца!</span></p>
           </li>
         </ul>
       </div>
@@ -158,15 +146,20 @@
           <address class="contact-us__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="contact-us__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
-          <div style="position:relative;overflow:hidden;"><a
+          <!--<div style="position:relative;overflow:hidden;"><a
               href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
               style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
               href="https://yandex.ru/maps/2/saint-petersburg/?clid=2254922&ll=30.322740%2C59.938534&utm_medium=mapframe&utm_source=maps&z=19"
               style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт‑Петербург — Яндекс.Карты</a><iframe
               src="https://yandex.ru/map-widget/v1/-/CSVTJXm-" width="560" height="400" frameborder="1"
-              allowfullscreen="true" style="position:relative;"></iframe></div>
+              allowfullscreen="true" style="position:relative;"></iframe></div>-->
           <p>
-            <img class="contact-us__map" src="img/bg-map-mobile@1x.png" alt="aдрес на карте компании Cat Energy">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="contact-us__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+                alt="Адрес на карте компании Cat Energy">
+            </picture>
           </p>
           <!--<div class="contact-us__pin-wrapper" aria-label="Указатель положения на карте"></div>-->
         </div>
