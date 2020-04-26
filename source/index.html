@@ -25,7 +25,7 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list-index">
           <li class="site-list__item site-list__item--current">
             <a>главная</a>
           </li>
@@ -46,12 +46,14 @@
         <h1 class="intro__title">Функциональное<br> питание для котов</h1>
         <p class="intro__text">занялся собой? займись котом!</p>
       </div>
-      <picture>
-        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
-        <img class="intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
-          alt="Рекламный образец продукции компании Кэт энерджи">
-      </picture>
+      <div class="intro__picture-wrapper">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+          <img class="intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+            alt="Рекламный образец продукции компании Кэт энерджи">
+        </picture>
+      </div>
       <a href="form.html" class="button green-button intro__button">Подобрать программу</a>
     </section>
     <section class="program-type">
