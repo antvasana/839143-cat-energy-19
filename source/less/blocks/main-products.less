@@ -1,19 +1,38 @@
 .main-products-list {
   .list-reset();
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .main-products-list__item {
   padding: 25px 20px;
 
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+
+    border-bottom: none;
+  }
 }
 
 .main-products-list__item:first-child {
   border-top: 1px solid #ededed;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+  }
 }
 
 .main-products-list__wrapper {
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .main-products-list__link {
