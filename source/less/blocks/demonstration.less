@@ -70,6 +70,10 @@
     justify-content: space-between;
     margin-bottom: 72px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .data-list {
@@ -79,6 +83,10 @@
   height: 110px;
 
   .list-reset();
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;;
+  }
 }
 
 .data-list__item {
@@ -180,6 +188,16 @@
     font-size: 20px;
     line-height: 30px;
     text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.demonstration__conclusion span {
+  @media (min-width: @desktop-width) {
+    margin-right: 60px;
   }
 }
 
