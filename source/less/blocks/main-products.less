@@ -9,6 +9,11 @@
     margin-left: 30px;
     margin-right: 30px;
   }
+
+   @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .main-products-list__item {
@@ -29,6 +34,11 @@
     background-color: #f2f2f2;
     border-bottom: none;
   }
+
+   @media (min-width: @desktop-width) {
+    width: 245px;
+    min-height: 432px;
+  }
 }
 
 .main-products-list__item:first-child {
@@ -44,6 +54,13 @@
     align-self: flex-start;
 
     margin-bottom: 71px;
+  }
+}
+
+.main-products-list__item--buckwheat-small,
+.main-products-list__item--buckwheat-big {
+  @media (min-width: @desktop-width) {
+    align-self: flex-start;
   }
 }
 
@@ -97,7 +114,7 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     margin-top: 39px;
-    margin-bottom: 28px;
+    margin-bottom: 15px;
     max-width: 135px;
 
     font-size: 20px;
@@ -108,7 +125,7 @@
 .main-products-list__info-wrapper {
   @media (min-width: @tablet-width) {
     position: relative;
-    top: 100px;
+    top: 115px;
   }
 }
 
@@ -116,7 +133,7 @@
   width: 142px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 25px;
     width: 100%;
   }
 }
@@ -158,14 +175,27 @@
     background-color: transparent;
     border: 1px solid #cdcdcd;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .main-products__info--promo {
   @media (min-width: @tablet-width) {
     align-self: flex-start;
 
+    margin-bottom: 70px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 115px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -188,6 +218,12 @@
     line-height: 20px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-top: 130px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -205,6 +241,10 @@
       left: 35%;
 
       width: 61px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 30%;
     }
   }
 
@@ -228,7 +268,6 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 28px;
-    margin-bottom: 90px;
 
     font-size: @medium-font-size;
     line-height: normal;

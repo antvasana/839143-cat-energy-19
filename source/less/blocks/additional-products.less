@@ -17,10 +17,15 @@
   color: @color-title;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 75px;
     margin-left: 67px;
 
     font-size: @big-font-size;
     line-height: @biggest-line-height;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 109px;
   }
 
   &::before {
@@ -37,6 +42,10 @@
       height: 3px;
 
       background: @main-color;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 7%;
     }
   }
 
@@ -59,6 +68,10 @@
 
       width: 45%;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 70%;
+    }
   }
 }
 
@@ -69,6 +82,7 @@
   .list-reset();
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -79,10 +93,38 @@
   padding-bottom: 17px;
 
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 28px;
+    padding-left: 38px;
+    padding-right: 37px;
+
+    border-bottom: none;
+    border: 1px solid @border-color-one;
+  }
 }
 
-.additional-products-list__item:first-child {
+.additional-products-list__item:nth-child(1) {
   border-top: 1px solid #ededed;
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid @border-color-one;
+  }
+}
+
+.additional-products-list__item:nth-child(1),
+.additional-products-list__item:nth-child(2),
+.additional-products-list__item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.additional-products-list__info {
+   @media (min-width: @tablet-width) {
+     display: flex;
+     justify-content: space-between;
+   }
 }
 
 .additional-products-list__item-title {
@@ -93,11 +135,23 @@
   font-weight: normal;
   text-align: left;
   color: #222222;
+
+   @media (min-width: @tablet-width) {
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    line-height: @big-line-height;
+  }
 }
 
 .additional-products-list__data {
   margin-bottom: 14px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 18px;
+    width: 35%;
+  }
 }
 
 .additional-products-list__data td {
@@ -106,6 +160,11 @@
   line-height: @small-line-height;
   text-transform: none;
   color: @color-text;
+
+  @media (min-width: @tablet-width) {
+    font-size: @medium-font-size;
+    line-height: @big-line-height;
+  }
 }
 
 .additional-products-list__data td:first-child {
