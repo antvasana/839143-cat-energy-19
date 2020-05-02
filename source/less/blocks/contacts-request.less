@@ -29,6 +29,8 @@
 
 .contacts-request__email,
 .contacts-request__phone {
+  position: relative;
+
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -49,7 +51,7 @@
   color: #222222;
 
   &--email {
-    margin-right: 12px;
+    margin-right: 10px;
   }
 
   &--phone {
@@ -63,7 +65,7 @@
   padding-left: 16px;
 
   &--email {
-    width: 80%;
+    width: 77%;
   }
 
   &--phone {
@@ -80,4 +82,38 @@
   font-size: @medium-font-size;
   line-height: @main-line-height;
   color: @color-text;
-  }
+}
+
+.contacts-request__icon--email {
+  content: "";
+  position: absolute;
+
+  top: 36%;
+  right: 12%;
+
+  width: 18px;
+  height: 14px;
+}
+
+.contacts-request__icon--phone {
+  content: "";
+  position: absolute;
+
+  top: 27%;
+  right: 10%;
+
+  width: 21px;
+  height: 22px;
+}
+
+.contacts-request__icon--email path,
+.contacts-request__icon--phone path {
+  fill: #222222;
+}
+
+.contacts-request__icon--email:focus path,
+.contacts-request__icon--phone:focus path,
+.contacts-request__icon--email:active path,
+.contacts-request__icon--phone:active path {
+  fill: @main-color;
+}
