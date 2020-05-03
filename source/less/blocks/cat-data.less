@@ -2,6 +2,11 @@
   font-size: @medium-font-size;
   line-height: @main-line-height;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: @big-line-height;
+  }
 }
 
 .cat-data__name,
@@ -47,14 +52,33 @@
 
   &--weight {
     width: 70%;
+
+    @media (min-width: @tablet-width) {
+      width: 76%;
+    }
   }
 
   &--years {
     width: 60%;
+
+    @media (min-width: @tablet-width) {
+      width: 70%;
+    }
   }
 
   &:active {
     border-color: @color-text;
+  }
+}
+
+.cat-data__cat::placeholder {
+  font-size: @medium-font-size;
+  line-height: @main-line-height;
+  color: @color-text;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: @big-line-height;
   }
 }
 
