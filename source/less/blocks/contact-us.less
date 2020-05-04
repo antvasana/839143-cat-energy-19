@@ -11,10 +11,6 @@
    }
 }
 
-.contact-us--inner {
-  background-color: @background-color;
-}
-
 .contact-us__text {
   display: flex;
   justify-content: space-between;
@@ -40,6 +36,10 @@
 
      background-color: #ffffff;
    }
+}
+
+.contact-us__text--inner {
+ background-color: @background-color;
 }
 
 .contact-us__slogan {
@@ -99,7 +99,7 @@
 .contact-us__map-wrapper {
   content: "";
   position: absolute;
-  top: 98%;
+  top: 97%;
   left: 0;
 
   @media (min-width: @desktop-width) {
@@ -108,6 +108,10 @@
 }
 
 .contact-us__map-wrapper p {
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
@@ -125,7 +129,7 @@
   background-image: url("../img/map-pin.png");
 
   @media (min-width: @tablet-width) {
-    top: 160px;
+    top: 150px;
     left: 43%;
   }
 
