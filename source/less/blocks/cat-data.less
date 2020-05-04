@@ -9,13 +9,28 @@
   }
 }
 
-.cat-data__name,
+.cat-data__name {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 71px;
+  }
+}
+
 .cat-data__weight,
 .cat-data__years {
   display: flex;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 71px;
+    padding-right: 0;
+  }
 }
 
 .cat-data__name,
@@ -27,6 +42,12 @@
   padding-bottom: 26px;
 
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 63px;
+
+    border-bottom: none;
+  }
 }
 
 .cat-data__label--name {
@@ -47,11 +68,11 @@
   padding-left: 16px;
 
   &--name {
-    width: 80%;
+    width: 83%;
   }
 
   &--weight {
-    width: 70%;
+    width: 80%;
 
     @media (min-width: @tablet-width) {
       width: 76%;

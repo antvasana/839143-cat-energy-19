@@ -2,7 +2,7 @@
   position: relative;
 
   margin-bottom: 32px;
-  margin-left: 20px;
+  padding-left: 20px;
 
   font-size: 24px;
   line-height: 24px;
@@ -10,30 +10,87 @@
   text-transform: none;
   color: @color-title;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 71px;
+    padding-left: 72px;
+    font-size: @big-font-size;
+    line-height: @biggest-line-height;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: 54%;
+      left: 0;
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      width: 18%;
+      height: 3px;
+
+      background: @main-color;
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: -112%;
+    right: -98%;
 
     flex-grow: 1;
     flex-shrink: 0;
 
-    width: 95%;
+    width: 85%;
     height: 3px;
 
     background: @main-color;
+
+    @media (min-width: @tablet-width) {
+      top: 54%;
+      right: -171%;
+
+      width: 439px;
+    }
   }
 }
 
 .addition-list {
   .list-reset();
+
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-left: 70px;
+    padding-right: 140px;
+  }
 }
 
 .addition-list__option {
-  padding-bottom: 28px;
-  padding-left: 20px;
+  margin-bottom: 28px;
   padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.addition-list__option--sweetener {
+  @media (min-width: @tablet-width) {
+    margin-right: 100px;
+  }
+}
+
+.addition-list__option--vitamins {
+  @media (min-width: @tablet-width) {
+    margin-right: 35px;
+  }
 }
 
 .addition-list__label {
@@ -44,6 +101,13 @@
   font-size: @medium-font-size;
   line-height: @main-line-height;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+
+    font-size: 20px;
+    line-height: @big-line-height;
+  }
 }
 
 .addition-list__label:active {
@@ -60,7 +124,13 @@
   height: 30px;
 
   border: 1px solid #cdcdcd;
-  border-radius: 1%;
+
+  @media (min-width: @tablet-width) {
+    top: -5px;
+
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .addition-list__label:hover::before {
@@ -82,6 +152,11 @@
   height: 17px;
 
   background-image: url("../img/icon-tick.svg");
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .addition-list__input:checked + .addition-list__label:active::after {

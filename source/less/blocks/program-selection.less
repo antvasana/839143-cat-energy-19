@@ -3,6 +3,15 @@
 
   .list-reset();
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 79px;
+    margin-left: 71px;
+    margin-right: 67px;
+
+    border-bottom: none;
+    border: 1px solid @border-color-one;
+  }
 }
 
 .selection-list__option {
@@ -19,6 +28,13 @@
   font-size: @medium-font-size;
   line-height: @main-line-height;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 88px;
+
+    font-size: 20px;
+    line-height: @big-line-height;
+  }
 }
 
 .selection-list__label:active {
@@ -36,6 +52,13 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 28px;
+
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .selection-list__label:hover::before {
@@ -58,6 +81,14 @@
 
   background-color: @main-color;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    left: 39px;
+
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .selection-list__input:checked + .selection-list__label:active::after {
