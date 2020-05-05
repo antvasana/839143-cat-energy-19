@@ -19,6 +19,10 @@
     line-height: @biggest-line-height;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-left: 112px;
+  }
+
   &::before {
     @media (min-width: @tablet-width) {
       content: "";
@@ -33,6 +37,10 @@
       height: 3px;
 
       background: @main-color;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 12%;
     }
   }
 
@@ -52,9 +60,14 @@
 
     @media (min-width: @tablet-width) {
       top: 54%;
-      right: -29.2%;
+      right: -29.5%;
 
-      width: 20%;
+      width: 25%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 104.7%;
+      width: 775px;
     }
   }
 }
@@ -66,6 +79,12 @@
   @media (min-width: @tablet-width) {
     margin-left: 71px;
     margin-right: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: baseline;
+    padding-top: 5px;
   }
 }
 
@@ -83,6 +102,11 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 78px;
+    width: 45%;
+  }
 }
 
 .contacts-request__phone {
@@ -91,12 +115,21 @@
    @media (min-width: @tablet-width) {
     margin-bottom: 69px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 45%;
+  }
 }
 
 .contacts-request__label {
   font-size: @medium-font-size;
   line-height: @main-line-height;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: @big-line-height;
+  }
 
   &--email {
     margin-right: 10px;
@@ -113,11 +146,6 @@
       margin-right: 16px;
     }
   }
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: @big-line-height;
-  }
 }
 
 .contacts-request__user {
@@ -125,11 +153,25 @@
   padding-bottom: 14px;
   padding-left: 16px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+
   &--email {
     width: 77%;
 
     @media (min-width: @tablet-width) {
       width: 85%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 4px;
     }
   }
 
@@ -138,6 +180,10 @@
 
     @media (min-width: @tablet-width) {
       width: 82.5%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 5px;
     }
   }
 
