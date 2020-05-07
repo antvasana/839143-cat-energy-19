@@ -1,3 +1,9 @@
+.comment {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
 .comment__legend {
   position: relative;
 
@@ -11,10 +17,15 @@
   color: @color-title;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 71px;
+    margin-bottom: 69px;
     padding-left: 72px;
     font-size: @big-font-size;
     line-height: @biggest-line-height;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
+    padding-left: 111px;
   }
 
   &::before {
@@ -31,6 +42,10 @@
       height: 3px;
 
       background: @main-color;
+    }
+
+     @media (min-width: @tablet-width) {
+      width: 25%;
     }
   }
 
@@ -54,6 +69,11 @@
 
       width: 190%;
     }
+
+    @media (min-width: @desktop-width) {
+      left: 335px;
+      width: 1100px;
+    }
   }
 }
 
@@ -71,6 +91,13 @@
     margin-left: 70px;
     margin-right: 65px;
     width: 82%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
+    margin-left: 110px;
+    margin-right: 110px;
+    width: 85%;
   }
 }
 

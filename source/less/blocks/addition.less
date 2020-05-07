@@ -1,3 +1,9 @@
+.addition {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
 .addition__legend {
   position: relative;
 
@@ -15,6 +21,11 @@
     padding-left: 72px;
     font-size: @big-font-size;
     line-height: @biggest-line-height;
+
+    @media (min-width: @desktop-width) {
+    margin-bottom: 64px;
+    padding-left: 109px;
+  }
   }
 
   &::before {
@@ -31,6 +42,10 @@
       height: 3px;
 
       background: @main-color;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 25%;
     }
   }
 
@@ -54,6 +69,12 @@
 
       width: 439px;
     }
+
+    @media (min-width: @desktop-width) {
+      left: 360px;
+
+      width: 1080px;
+    }
   }
 }
 
@@ -70,6 +91,10 @@
     padding-left: 70px;
     padding-right: 140px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+  }
 }
 
 .addition-list__option {
@@ -78,6 +103,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
   }
 }
 
