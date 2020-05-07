@@ -1,3 +1,9 @@
+/*.program-selection {
+  @media (min-width: @desktop-width) {
+    margin-left: 30px;
+  }
+}*/
+
 .selection-list {
   .list-reset();
   padding-top: 29px;
@@ -10,10 +16,13 @@
     margin-right: 67px;
 
     border-bottom: none;
-    border: 1px solid @border-color-one;
+    border: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+    margin-left: 50px;
+    margin-right: 0;
     width: 570px;
   }
 }
@@ -22,6 +31,24 @@
   padding-bottom: 26px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.selection-list__option--slim {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 33px;
+  }
+}
+
+.selection-list__option--weight-gain {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 35px;
+  }
+}
+
+.selection-list__option--need-advice {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 33px;
+  }
 }
 
 .selection-list__label {

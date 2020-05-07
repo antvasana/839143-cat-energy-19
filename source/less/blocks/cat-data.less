@@ -1,3 +1,9 @@
+.cat-data {
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
+}
+
 .cat-data__label {
   font-size: @medium-font-size;
   line-height: @main-line-height;
@@ -21,12 +27,9 @@
     padding-left: 71px;
   }
 
-   @media (min-width: @tablet-width) {
-    padding-left: 112px;
-  }
-
   @media (min-width: @desktop-width) {
-    width: 570px;
+    padding-left: 112px;
+    width: 700px;
   }
 }
 
@@ -40,17 +43,23 @@
 .cat-data__name,
 .cat-data__weight {
   margin-bottom: 40px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .cat-data__years {
   padding-bottom: 26px;
 
-  border-bottom: 1px solid #ededed;
-
   @media (min-width: @tablet-width) {
     padding-bottom: 63px;
 
     border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+     min-width: 130px;
   }
 }
 
@@ -60,6 +69,10 @@
 
 .cat-data__label--weight {
   margin-right: 13px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 19px;
+  }
 }
 
 .cat-data__label--years {
@@ -71,8 +84,14 @@
   padding-bottom: 15px;
   padding-left: 16px;
 
+  border: 1px solid #e6e6e6;
+
   &--name {
     width: 83%;
+
+    @media (min-width: @desktop-width) {
+      width: 92%;
+    }
   }
 
   &--weight {
@@ -81,6 +100,10 @@
     @media (min-width: @tablet-width) {
       width: 76%;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 83%;
+    }
   }
 
   &--years {
@@ -88,6 +111,10 @@
 
     @media (min-width: @tablet-width) {
       width: 70%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 77%;
     }
   }
 
