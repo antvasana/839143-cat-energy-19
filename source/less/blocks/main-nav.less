@@ -4,6 +4,11 @@
   width: 320px;
   min-height: 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -20,11 +25,6 @@
 
   cursor: pointer;
   border: none;
-
-  /*&:hover,
-  &:active {
-    background-color: #624530;
-  }*/
 
   @media (min-width: @tablet-width) {
     display: none;

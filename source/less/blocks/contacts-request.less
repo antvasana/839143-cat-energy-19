@@ -1,9 +1,16 @@
+.contacts-request {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
 .contacts-request__legend {
   position: relative;
 
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 
   font-size: 24px;
   line-height: 24px;
@@ -11,36 +18,114 @@
   text-transform: none;
   color: @color-title;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 70px;
+    padding-left: 71px;
+    font-size: @big-font-size;
+    line-height: @biggest-line-height;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 112px;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: 54%;
+      left: 0;
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      width: 8%;
+      height: 3px;
+
+      background: @main-color;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 12%;
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
-    right: -65%;
+    top: 40%;
+    right: 0;
 
     flex-grow: 1;
     flex-shrink: 0;
 
-    width: 45%;
+    width: 30%;
     height: 3px;
 
     background: @main-color;
+
+    @media (min-width: @tablet-width) {
+      top: 54%;
+      right: -29.5%;
+
+      width: 25%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 104.7%;
+      width: 775px;
+    }
+  }
+}
+
+.contacts-request__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 71px;
+    margin-right: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: baseline;
+    margin-left: 112px;
+    padding-top: 5px;
   }
 }
 
 .contacts-request__email,
 .contacts-request__phone {
+  position: relative;
+
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .contacts-request__email {
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 78px;
+    width: 49%;
+  }
 }
 
 .contacts-request__phone {
   margin-bottom: 31px;
+
+   @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 42%;
+  }
 }
 
 .contacts-request__label {
@@ -48,12 +133,25 @@
   line-height: @main-line-height;
   color: #222222;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: @big-line-height;
+  }
+
   &--email {
-    margin-right: 12px;
+    margin-right: 10px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 18px;
+    }
   }
 
   &--phone {
     margin-right: 10px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 16px;
+    }
   }
 }
 
@@ -62,12 +160,40 @@
   padding-bottom: 14px;
   padding-left: 16px;
 
+  border: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+
   &--email {
-    width: 80%;
+    width: 77%;
+
+    @media (min-width: @tablet-width) {
+      width: 85%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 15px;
+    }
   }
 
   &--phone {
     width: 75%;
+
+    @media (min-width: @tablet-width) {
+      width: 82.5%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 5px;
+    }
   }
 
   &:active {
@@ -80,4 +206,47 @@
   font-size: @medium-font-size;
   line-height: @main-line-height;
   color: @color-text;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: @big-line-height;
   }
+}
+
+.contacts-request__icon--email {
+  content: "";
+  position: absolute;
+
+  top: 36%;
+  right: 6.5%;
+
+  width: 18px;
+  height: 14px;
+}
+
+.contacts-request__icon--phone {
+  content: "";
+  position: absolute;
+
+  top: 27%;
+  right: 4%;
+
+  width: 21px;
+  height: 22px;
+
+  @media (min-width: @tablet-width) {
+    right: 6%;
+  }
+}
+
+.contacts-request__icon--email path,
+.contacts-request__icon--phone path {
+  fill: #222222;
+}
+
+.contacts-request__icon--email:focus path,
+.contacts-request__icon--phone:focus path,
+.contacts-request__icon--email:active path,
+.contacts-request__icon--phone:active path {
+  fill: @main-color;
+}

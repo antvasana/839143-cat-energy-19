@@ -1,16 +1,20 @@
 .site-list {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-    width: 570px;
-  }
-
   .list-reset();
 
   font-size: 20px;
   line-height: @big-line-height;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 440px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 45px;
+  }
 }
 
 .site-list__item {
@@ -21,11 +25,21 @@
   }
 }
 
-.site-list__item:first-child {
+.site-list__item:nth-child(1) {
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
     border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 36px;
+  }
+}
+
+.site-list__item:nth-child(2) {
+  @media (min-width: @desktop-width) {
+    margin-right: 38px;
   }
 }
 
@@ -35,8 +49,23 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
+  font-size: 20px;
+  line-height: @big-line-height;
   font-family: @fancy-font-two, "Arial", sans-serif;
   color: @color-title;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: @fancy-font-one, "Arial", sans-serif;
+    color: #222222;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+
+    font-size: 20px;
+  }
 }
 
 .site-list__item a:hover {
@@ -46,6 +75,51 @@
 .site-list__item a:active {
   color: rgba(17, 17, 17, 0.3);
 }
+
+.site-list__item--current a {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid @main-color;
+  }
+}
+
+.site-list__item--current:first-child a {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+.site-list__item--current:first-child a:hover {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  }
+}
+
+.site-list__item--current:first-child a:active {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.site-list-index a {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.site-list-index a:hover {
+  @media (min-width: @desktop-width) {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.site-list-index a:active {
+  @media (min-width: @desktop-width) {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 
 /*.site-list {
   font-weight: bold;
