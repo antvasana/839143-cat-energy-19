@@ -213,40 +213,40 @@
   }
 }
 
-.contacts-request__icon--email {
+.contacts-request__icon-email {
   content: "";
   position: absolute;
 
   top: 36%;
-  right: 6.5%;
+  right: 10%;
 
   width: 18px;
   height: 14px;
 }
 
-.contacts-request__icon--phone {
+.contacts-request__icon-phone {
   content: "";
   position: absolute;
 
   top: 27%;
-  right: 4%;
+  right: 30%;
 
   width: 21px;
-  height: 22px;
+  height: 21px;
 
   @media (min-width: @tablet-width) {
     right: 6%;
   }
 }
 
-.contacts-request__icon--email path,
-.contacts-request__icon--phone path {
+.contacts-request__icon-phone,
+.contacts-request__icon-email {
   fill: #222222;
 }
 
-.contacts-request__icon--email:focus path,
-.contacts-request__icon--phone:focus path,
-.contacts-request__icon--email:active path,
-.contacts-request__icon--phone:active path {
+.contacts-request__icon-email:focus,
+.contacts-request__icon-phone:focus,
+.contacts-request__icon-email:active,
+.contacts-request__icon-phone:active {
   fill: @main-color;
 }
