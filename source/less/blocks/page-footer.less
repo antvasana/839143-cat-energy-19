@@ -12,8 +12,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
   }
 }
 
@@ -77,16 +79,24 @@
   }
 }
 
-.social__link path {
+.social__icon-vk,
+.social__icon-insta,
+.social__icon-fb {
   fill: #666666;
 }
 
-.social__link:hover path {
+.social__icon-vk:hover,
+.social__icon-insta:hover,
+.social__icon-fb:hover {
   fill: @main-color;
 }
 
-.social__link:focus path,
-.social__link:active path {
+.social__icon-vk:focus path,
+.social__icon-vk:active,
+.social__icon-insta:focus path,
+.social__icon-insta:active,
+.social__icon-fb:focus path,
+.social__icon-fb:active {
   fill: @main-color;
   opacity: 0.3;
 }
@@ -141,16 +151,16 @@
   }
 }
 
-.copyright__link path {
+.copyright__icon-htmlacademy {
   fill: #666666;
 }
 
-.copyright:hover path {
+.copyright__icon-htmlacademy:hover {
   fill: @main-color;
 }
 
-.copyright:focus path,
-.copyright:active path {
+.copyright__icon-htmlacademy:focus,
+.copyright__icon-htmlacademy:active {
   fill: @main-color;
   opacity: 0.3;
 }
