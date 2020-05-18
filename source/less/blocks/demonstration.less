@@ -38,9 +38,17 @@
 }
 
 .demonstration__wrapper {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     /*justify-content: space-between;*/
+
+    width: 1220px;
   }
 }
 
@@ -85,7 +93,7 @@
   .list-reset();
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 48px;;
+    margin-bottom: 48px;
   }
 }
 

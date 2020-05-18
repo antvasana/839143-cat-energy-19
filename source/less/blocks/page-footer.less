@@ -20,6 +20,18 @@
 }
 
 .page-footer__wrapper {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
