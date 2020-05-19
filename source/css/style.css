@@ -327,9 +327,7 @@ template {
 }
 @media (min-width: 1300px) {
   .container {
-    width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 1300px;
   }
 }
 *,
@@ -524,19 +522,6 @@ input[type="radio"].visually-hidden {
     padding-right: 60px;
   }
 }
-.page-header__wrapper {
-  width: 280px;
-}
-@media (min-width: 768px) {
-  .page-header__wrapper {
-    width: 708px;
-  }
-}
-@media (min-width: 1300px) {
-  .page-header__wrapper {
-    width: 1220px;
-  }
-}
 .page-header__logo {
   display: block;
   margin-bottom: 20px;
@@ -725,16 +710,16 @@ input[type="radio"].visually-hidden {
     margin-bottom: -120px;
   }
 }
-.page-header__wrapper {
+.intro__wrapper {
   width: 280px;
 }
 @media (min-width: 768px) {
-  .page-header__wrapper {
+  .intro__wrapper {
     width: 708px;
   }
 }
 @media (min-width: 1300px) {
-  .page-header__wrapper {
+  .intro__wrapper {
     width: 1220px;
   }
 }
@@ -958,21 +943,6 @@ input[type="radio"].visually-hidden {
 }
 .selection-list__input:checked + .selection-list__label:active::after {
   opacity: 0.3;
-}
-.advantages__wrapper {
-  width: 280px;
-}
-@media (min-width: 768px) {
-  .advantages__wrapper {
-    width: 708px;
-    border-bottom: 1px solid #e6e6e6;
-  }
-}
-@media (min-width: 1300px) {
-  .advantages__wrapper {
-    width: 1220px;
-    border-bottom: none;
-  }
 }
 .advantages__title {
   margin-left: 22px;
@@ -1221,12 +1191,11 @@ input[type="radio"].visually-hidden {
   }
 }
 .demonstration__wrapper {
-  width: 280px;
-}
-@media (min-width: 768px) {
-  .demonstration__wrapper {
+  /*width: 280px;
+
+  @media (min-width: @tablet-width) {
     width: 708px;
-  }
+  }*/
 }
 @media (min-width: 1300px) {
   .demonstration__wrapper {
@@ -1234,7 +1203,7 @@ input[type="radio"].visually-hidden {
     display: -ms-flexbox;
     display: flex;
     /*justify-content: space-between;*/
-    width: 1220px;
+    /*width: 1220px;*/
   }
 }
 .demonstration__text {
@@ -1425,19 +1394,6 @@ input[type="radio"].visually-hidden {
     height: 400px;
   }
 }
-.contact-us__wrapper {
-  width: 280px;
-}
-@media (min-width: 768px) {
-  .contact-us__wrapper {
-    width: 708px;
-  }
-}
-@media (min-width: 1300px) {
-  .contact-us__wrapper {
-    width: 1220px;
-  }
-}
 .contact-us__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1457,9 +1413,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1300px) {
   .contact-us__text {
     position: relative;
-    top: 310px;
+    top: 275px;
     z-index: 5;
-    margin-left: 110px;
+    margin-left: 35px;
     padding-top: 25px;
     padding-bottom: 45px;
     padding-left: 76px;
@@ -1468,7 +1424,7 @@ input[type="radio"].visually-hidden {
   }
 }
 .contact-us__text--inner {
-  background-color: #f2f2f2;
+  background-color: #00f;
 }
 .contact-us__slogan {
   margin-top: 31px;
@@ -1833,8 +1789,8 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1300px) {
   .main-products-list {
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .main-products-list__item {
@@ -2411,6 +2367,14 @@ input[type="radio"].visually-hidden {
   border: none;
   text-align: left;
 }
+.feedback__wrapper {
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .feedback__wrapper {
+    width: 708px;
+  }
+}
 @media (min-width: 1300px) {
   .feedback__wrapper {
     display: -webkit-box;
@@ -2419,6 +2383,7 @@ input[type="radio"].visually-hidden {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     /*justify-content: space-between;*/
+    width: 1220px;
   }
 }
 .feedback__submit {
@@ -2680,19 +2645,6 @@ input[type="radio"].visually-hidden {
     width: 312px;
   }
 }*/
-.program-type__wrapper {
-  width: 280px;
-}
-@media (min-width: 768px) {
-  .program-type__wrapper {
-    width: 708px;
-  }
-}
-@media (min-width: 1300px) {
-  .program-type__wrapper {
-    width: 1220px;
-  }
-}
 .program-type-list {
   margin-left: 20px;
   margin-right: 20px;
@@ -2754,7 +2706,7 @@ input[type="radio"].visually-hidden {
     font-size: 36px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1300px) {
   .program-type-list__item h3 {
     padding-top: 81px;
     padding-bottom: 60px;
