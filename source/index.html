@@ -381,44 +381,47 @@
             </p>
           </div>
         </div>
+        <div class="img-comp-container">
+          <div class="img-comp-img">
+            <img src="img_snow.jpg" width="300" height="200">
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img src="img_forest.jpg" width="300" height="200">
+          </div>
+        </div>
         <div class="demonstation__slider">
-          <ul class="demonstration__list slider__list">
-            <li class="demonstration__item demonstration__item--before slider__item">
-              <div class="demonstation__slider demonstation__slider--before">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x,
-                        img/before-desktop@2x.webp 2x" />
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x,
-                        img/before-tablet@2x.webp 2x" />
-                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x,
-                        img/before-mobile@2x.webp 2x" />
+          <div class="demonstation__slider demonstation__slider--before">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x,
+                                img/before-desktop@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x,
+                                img/before-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x,
+                                img/before-mobile@2x.webp 2x" />
 
-                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x,
-                        img/before-desktop@2x.png 2x" />
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x,
-                        img/before-tablet@2x.png 2x" />
-                  <img class="demonstration__image demonstration__image--before" src="img/before-mobile@1x.png"
-                    srcset="img/before-mobile@2x.png 2x" alt="фото кота до приема Кэт Энерджи" />
-                </picture>
-              </div>
-            </li>
-            <!--<li class="demonstration__item demonstration__item--after slider__item">
-              <div class="demonstation__slider demonstation__slider--after">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)"
-                    srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x,
+                                img/before-desktop@2x.png 2x" />
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x,
+                                img/before-tablet@2x.png 2x" />
+              <img class="demonstration__image demonstration__image--before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" alt="фото кота Бориса до приема Кэт Энерджи" />
+            </picture>
+          </div>
+          <div class="demonstation__slider demonstation__slider--after">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                  <img class="demonstration__image demonstration__image--after" src="img/after-mobile@1x.png"
-                    srcset="img/after-mobile@2x.png 2x" alt="фото кота после приема Кэт Энерджи">
-                </picture>
-              </div>
-            </li>-->
-          </ul>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="demonstration__image demonstration__image--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" alt="фото кота Бориса после приема Кэт Энерджи">
+            </picture>
+          </div>
+          <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
           <p class="demonstration__toggles slider__toggles">
             <button class="slider__toggle" type="button" aria-label="Переход к фотографии кота до приема Кэт Энерджи">
               Было
@@ -442,16 +445,9 @@
           </address>
         </div>
         <div class="contact-us__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
-          <!--<div style="position:relative;overflow:hidden;"><a
-                      href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-                      style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-                      href="https://yandex.ru/maps/2/saint-petersburg/?clid=2254922&ll=30.322740%2C59.938534&utm_medium=mapframe&utm_source=maps&z=19"
-                      style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт‑Петербург — Яндекс.Карты</a><iframe
-                      src="https://yandex.ru/map-widget/v1/-/CSVTJXm-" width="560" height="400" frameborder="1"
-                      allowfullscreen="true" style="position:relative;"></iframe></div>-->
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab4f6043b3fef8a19740742b236bbfd79ef52920fda3041863dfe011bd153b11e&amp;source=constructor"
-            width="320" height="363"></iframe>
+            width="320" height="400"></iframe>
           <p>
             <picture>
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x,
@@ -469,7 +465,6 @@
                 alt="Адрес на карте компании Cat Energy" />
             </picture>
           </p>
-          <!--<div class="contact-us__pin-wrapper" aria-label="Указатель положения на карте"></div>-->
         </div>
       </div>
     </section>
@@ -491,7 +486,7 @@
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"><span
                 class="visually-hidden">Кэт энерджи в Вконтакте</span>
               <svg class="social__icon-vk" width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -499,7 +494,7 @@
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
               target="_blank"><span class="visually-hidden">Кэт энерджи в Инстаграме</span>
               <svg class="social__icon-insta" width="22" height="12">
-                <use xlink:href="#icon-insta"></use>
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -507,7 +502,7 @@
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
               target="_blank"><span class="visually-hidden">Кэт энерджи в Фейсбуке</span>
               <svg class="social__icon-fb" width="10" height="19">
-                <use xlink:href="#icon-fb"></use>
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -518,7 +513,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2"
           target="_blank">
           <svg class="copyright__icon-htmlacademy" width="26.943" height="34.09">
-            <use xlink:href="#icon-htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>

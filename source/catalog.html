@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -703,7 +703,7 @@
         <div class="promotion">
           <p class="promotion__gift">
             <svg class="promotion__icon-gift" width="56" height="61">
-              <use xlink:href="#icon-gift"></use>
+              <use xlink:href="img/sprite.svg#icon-gift"></use>
             </svg>
           </p>
           <a class="promotion__link" href="booking.html">
@@ -719,13 +719,9 @@
           <address class="contact-us__address"><span>ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</address>
         </div>
         <div class="contact-us__map-wrapper" aria-label="Улица Большая Конюшенная, дом 19/8, город Санкт-Петербург">
-          <!--<div style="position:relative;overflow:hidden;"><a
-                          href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-                          style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-                          href="https://yandex.ru/maps/2/saint-petersburg/?clid=2254922&ll=30.322740%2C59.938534&utm_medium=mapframe&utm_source=maps&z=19"
-                          style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт‑Петербург — Яндекс.Карты</a><iframe
-                          src="https://yandex.ru/map-widget/v1/-/CSVTJXm-" width="560" height="400" frameborder="1"
-                          allowfullscreen="true" style="position:relative;"></iframe></div>-->
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab4f6043b3fef8a19740742b236bbfd79ef52920fda3041863dfe011bd153b11e&amp;source=constructor"
+            width="320" height="400"></iframe>
           <p>
             <picture>
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
@@ -734,7 +730,6 @@
                 alt="Адрес на карте компании Cat Energy">
             </picture>
           </p>
-          <!--<div class="contact-us__pin-wrapper" aria-label="Указатель положения на карте"></div>-->
         </div>
       </div>
     </section>
@@ -758,7 +753,7 @@
                 class="visually-hidden">Кэт
                 энерджи в Вконтакте</span>
               <svg class="social__icon-vk" width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -766,7 +761,7 @@
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
               target="_blank"><span class="visually-hidden">Кэт энерджи в Инстаграме</span>
               <svg class="social__icon-insta" width="22" height="12">
-                <use xlink:href="#icon-insta"></use>
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -774,7 +769,7 @@
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
               target="_blank"><span class="visually-hidden">Кэт энерджи в Фейсбуке</span>
               <svg class="social__icon-fb" width="10" height="19">
-                <use xlink:href="#icon-fb"></use>
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -785,13 +780,17 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2"
           target="_blank">
           <svg class="copyright__icon-htmlacademy" width="26.943" height="34.09">
-            <use xlink:href="#icon-htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+
+  <script src="js/svg4everybody.min.js"></script>
+  <script src="js/svg4everybody.legacy.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js" async=""></script>
 </body>
 
 </html>

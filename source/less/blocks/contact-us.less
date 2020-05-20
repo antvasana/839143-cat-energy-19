@@ -6,7 +6,7 @@
   @media (min-width: @desktop-width) {
     position: relative;
     top: 79px;
-    margin-bottom: 0;
+    margin-bottom: -26px;
     height: 400px;
   }
 }
@@ -39,7 +39,7 @@
 }
 
 .contact-us__text--inner {
-  background-color: #00f;
+  background-color: @background-color;
 }
 
 .contact-us__slogan {
@@ -104,6 +104,21 @@
 
   @media (min-width: @desktop-width) {
     z-index: 0;
+  }
+}
+
+.contact-us__map-wrapper iframe {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+
+  border: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+
+    width: 100%;
   }
 }
 
