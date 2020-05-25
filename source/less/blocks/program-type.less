@@ -5,6 +5,7 @@
   .list-reset();
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -24,7 +25,7 @@
   background-color: @background-color;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 62px;
+    padding-bottom: 43px;
     padding-left: 52px;
   }
 
@@ -44,7 +45,7 @@
 .program-type-list__item h3 {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding-top: 25px;
   padding-left: 70px;
 
@@ -67,6 +68,12 @@
   }
 }
 
+.program-type-list__item .program-type-list__pro {
+  @media (min-width: @tablet-width) {
+    padding-top: 68px;
+  }
+}
+
 .program-type-list__slim::before {
   content: "";
   position: absolute;
@@ -80,8 +87,8 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    top: 60%;
-    left: 65%;
+    top: 82%;
+    left: 62%;
 
     width: 200px;
     height: 200px;
@@ -109,8 +116,8 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    top: 40%;
-    left: 70%;
+    top: 70.6%;
+    left: 67%;
 
     width: 141px;
     height: 194px;
@@ -138,8 +145,8 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    top: 60%;
-    left: 65%;
+    top: 75.5%;
+    left: 62%;
 
     width: 200px;
     height: 200px;
@@ -167,7 +174,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    top: 110%;
+    top: 115%;
     left: 57%;
 
     width: 268px;
@@ -196,6 +203,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 33px;
     max-width: 375px;
 
     font-size: @medium-font-size;
@@ -260,6 +268,16 @@
   &:active {
     color: rgba(17, 17, 17, 0.3);
   }
+}
+
+.program-type-list__link--pro::after {
+    @media (min-width: @tablet-width) {
+      right: 77%;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 65%;
+    }
 }
 
 .program-type-list__link:active::after {
