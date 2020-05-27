@@ -1,28 +1,41 @@
 .intro {
   position: relative;
   z-index: 5;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    margin-left: 120px;
+    margin-bottom: 65px;
+    margin-left: 115px;
     min-height: 775px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 180px;
+    margin-left: 160px;
     margin-bottom: -120px;
   }
 }
 
+.intro__wrapper {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
 .intro__presentation {
-  margin-bottom: 150px;
+  margin-bottom: 140px;
 
   height: 305px;
 
   background-color: @main-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
 
-  @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
@@ -43,7 +56,7 @@
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 37px;
 
     font-size: 60px;
     line-height: 60px;
@@ -74,20 +87,18 @@
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    left: 42.7%;
+    right: 160px;
     bottom: 220px;
-    z-index: 0;
 
-    width: 720px;
+    width: 50%;
     height: 696px;
 
     background-color: @main-color;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-    background-image: url("../img/index-background-desktop@2x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 }
@@ -100,7 +111,7 @@
 
   @media (min-width: @tablet-width) {
     top: 29%;
-    left: -10%;
+    left: -11%;
     z-index: 0;
 
     display: block;
@@ -108,8 +119,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 20%;
-    left: -22%;
+    top: 25%;
+    left: -23.5%;
   }
 }
 
@@ -122,11 +133,15 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    bottom: 205px;
+    bottom: 190px;
     z-index: 5;
 
     margin-left: 0;
     margin-right: 0;
+    padding-bottom: 16px;
     width: 245px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

@@ -6,7 +6,7 @@
   @media (min-width: @desktop-width) {
     position: relative;
     top: 79px;
-    margin-bottom: 0;
+    margin-bottom: -26px;
     height: 400px;
   }
 }
@@ -15,20 +15,20 @@
   display: flex;
   justify-content: space-between;
 
-  padding-bottom: 10px;
   padding-left: 19px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 35px;
     padding-left: 71px;
     padding-right: 71px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    top: 310px;
+    top: 275px;
     z-index: 5;
 
-    margin-left: 110px;
+    margin-left: 35px;
     padding-top: 25px;
     padding-bottom: 45px;
     padding-left: 76px;
@@ -44,7 +44,7 @@
 
 .contact-us__slogan {
   margin-top: 31px;
-  margin-right: 5px;
+  margin-right: 7px;
 
   font-size: @medium-font-size;
   line-height: @big-line-height;
@@ -69,6 +69,7 @@
   line-height: @big-line-height;
   font-style: normal;
   text-align: left;
+  text-transform: none;
   color: @color-text;
 
   @media (min-width: @tablet-width) {
@@ -104,6 +105,21 @@
 
   @media (min-width: @desktop-width) {
     z-index: 0;
+  }
+}
+
+.contact-us__map-wrapper iframe {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+
+  border: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+
+    width: 100%;
   }
 }
 

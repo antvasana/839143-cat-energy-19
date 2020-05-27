@@ -13,13 +13,26 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 100px;
+
     width: 100%;
   }
 }
 
 .page-footer__wrapper {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -59,7 +72,7 @@
   .list-reset();
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
+    margin-left: 22px;
     margin-right: 0;
     padding-top: 0;
   }
@@ -125,6 +138,14 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 100px;
+  }
 }
 
 .copyright__text {
@@ -146,21 +167,17 @@
   margin-top: 7px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
-    margin-left: 23px;
+    margin-top: -9px;
+    margin-left: 17px;
   }
 }
 
-.copyright__icon-htmlacademy {
-  fill: #666666;
-}
-
-.copyright__icon-htmlacademy:hover {
+.copyright__htmlacademy:hover path {
   fill: @main-color;
 }
 
-.copyright__icon-htmlacademy:focus,
-.copyright__icon-htmlacademy:active {
+.copyright__htmlacademy:focus path,
+.copyright__htmlacademy:active path {
   fill: @main-color;
   opacity: 0.3;
 }
